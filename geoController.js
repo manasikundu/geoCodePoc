@@ -16,7 +16,7 @@ exports.getData = async (req, res) => {
             zipcode: req.body.pincode,
             authentication,
         })
-        console.log(result.candidates)
+        // console.log(result.candidates)
         if (result.candidates && result.candidates.length > 0) {
             const inputArea = req.body.area.toLowerCase()
 
